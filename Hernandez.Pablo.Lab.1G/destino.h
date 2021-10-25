@@ -11,3 +11,4 @@ typedef struct{
 #endif // DESTINO_H_INCLUDED
 int mostrarDetinos( eDestino destinos[], int tam );
 int validarIdDestino( int id, eDestino destinos[], int tam );
+int cargarDescripcionDestino( eDestino destinos[], int tamD, int idDestino, char descripcion[], int* precio);

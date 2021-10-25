@@ -18,8 +18,8 @@ int menu()
     printf("  6- Listar Tipos\n");
     printf("  7- Listar Destinos\n");
     printf("  8- Alta Vuelos\n");
-    printf("  9- Mostrar personas por localidad\n");
-    printf("  20- Salir\n");
+    printf("  9- Listar Vuelos completos \n");
+    printf("  10- Salir\n");
     printf("Ingrese opcion: ");
     fflush(stdin);
     scanf("%d", &opcion);
@@ -64,7 +64,7 @@ void mostrarAvion(eAvion aviones, eAerolinea aerolineas[], int tamA, eTipo tipos
 
     if ( cargarDescripcionAerolinea( aerolineas, tamA, aviones.idAerolinea, descAerolinea) == 1
         && (cargarDescripcionTipo(tipos, tamT, aviones.idTipo, descTipo)) ==1)
-        //&&(cargarDescripcionTipo(tipos, tamT,aviones.idTipo, descTipo) ==1))
+
     {
         printf(" %d     %-10s       %-10s        %d\n",
                aviones.id,
@@ -333,7 +333,6 @@ int ordenarAviones(eAvion aviones[], int tam)
 {
     int todoOk = 0;
     eAvion auxAvion;
-    int orden;
     if (aviones != NULL && tam > 0)
     {
 
@@ -373,3 +372,43 @@ int validarIdAvion( int id, eAvion aviones[], int tam )
     }
     return esValido;
 }
+int buscarAvion(int idAvion, eAvion aviones[], int tam, int* idAerolinea, int* idTipo){
+    int todoOk =0;
+    if(aviones != NULL && tam>0){
+    for (int i =0; i <  tam; i++){
+        if (aviones[i].id == idAvion){
+            *idAerolinea = aviones[i].idAerolinea;
+            *idTipo = aviones[i].idTipo;
+            todoOk = 1;
+        }
+    }
+    todoOk =-1;
+    }
+
+return todoOk;
+}
+/*int cargarTipoAvion( eAvion avion[], int tam, eTipo tipos[], int tamT, int idAvion, char tipo[])
+{
+    int todoOk = 0;
+    int flag = 1;
+    char descripcion[20];
+    if (avion != NULL && tam > 0 && tipos != NULL && tamT > 0 && tipo != NULL)
+    {
+        todoOk = 1;
+        for (int i = 0; i < tam; i++)
+        {
+            if (avion[i].id == idAvion)
+            {
+                cargarDescripcionTipo(tipos, tamT, avion[i].idTipo, descripcion);
+                strcpy(tipo,descripcion);
+                flag =0;
+                break;
+            }
+        }
+        if (flag)
+        {
+            todoOk = -1; // no habia localidad con el id que le pasaron
+        }
+    }
+    return todoOk;
+}*/

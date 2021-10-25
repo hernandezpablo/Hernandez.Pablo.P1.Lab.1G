@@ -2,29 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tipo.h"
-/*int cargarDescripcionLocalidad( eLocalidad localidades[], int tam,int idLocalidad, char descripcion[] )
-{
-    int todoOk = 0;
-    int flag = 1;
-    if (localidades != NULL && tam > 0 && descripcion != NULL)
-    {
-        todoOk = 1;
-        for (int i = 0; i < tam; i++)
-        {
-            if (localidades[i].id == idLocalidad)
-            {
-                strcpy(descripcion, localidades[i].descripcion);
-                flag = 0;
-                break;
-            }
-        }
-        if (flag)
-        {
-            todoOk = -1; // no habia localidad con el id que le pasaron
-        }
-    }
-    return todoOk;
-}*/
+
 
 
 int cargarDescripcionTipo(eTipo tipos[], int tam,int idTipo, char descripcion[] )
@@ -45,7 +23,7 @@ int cargarDescripcionTipo(eTipo tipos[], int tam,int idTipo, char descripcion[] 
         }
         if (flag)
         {
-            todoOk = -1; // no habia localidad con el id que le pasaron
+            todoOk = -1;
         }
     }
     return todoOk;

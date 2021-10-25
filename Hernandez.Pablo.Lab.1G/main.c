@@ -20,7 +20,9 @@ int main()
     int nextId = 10000;
     eAvion aviones[TAM];
     int IdVuelo = 8000;
-
+    eVuelo vuelos[TAM_V];
+    int flagA =0;
+    int flagV =0;
 
     eAerolinea aerolineas[TAM_A] =
     {
@@ -51,6 +53,10 @@ int main()
         printf("Error al iniciar personas\n");
     }
 
+    if ( !inicializarVuelos(vuelos, TAM_V) )
+    {
+        printf("Error al iniciar vuelos\n");
+    }
 
 
    do
@@ -66,6 +72,7 @@ int main()
             {
                 printf("Alta exitosa\n");
             }
+            flagA =1;
             break;
         case 2:
             if(!bajaAvion(aviones, TAM, aerolineas, TAM_A, tipos, TAM_T))
@@ -117,9 +124,9 @@ int main()
                 printf("No se pudieron mostrar los destinos\n");
             }
             break;
-            /*case 8:
-
-            if(!altaVuelo(vuelos, TAM_V,aviones, TAM ,aerolineas, TAM_A, tipos, TAM_T , &IdVuelo)
+        case 8:
+            if(flagA == 1){
+            if(! altaVuelo(vuelos, TAM_V, aviones, TAM, aerolineas, TAM_A, tipos, TAM_T, destinos, TAM_D, &IdVuelo))
             {
                 printf("No se pudo realizar el alta\n");
             }
@@ -127,8 +134,22 @@ int main()
             {
                 printf("Alta exitosa\n");
             }
-            break;*/
-        case 20:
+            }else{
+            printf("No se puede ingresar vuelos sin haber registrado antes un avion\n");
+            }
+            flagV =1;
+            break;
+
+         case 9:
+
+            system("cls");
+            if ( !mostrarVuelosCompletos(vuelos,TAM_V,aviones, TAM_A,aerolineas, TAM_A, tipos, TAM_T, destinos,TAM_D) )
+            {
+                printf("No se pudieron mostrar los vuelos\n");
+            }
+
+            break;
+        case 10:
             printf("Esta seguro que quiere salir? (S/N)\n");
             fflush(stdin);
             scanf("%c", &salir);

@@ -5,7 +5,7 @@
 	<string.h>
 	"aerolinea.h"
 
-1634950675 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.c
+1635103625 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -13,30 +13,30 @@
 
 1634939758 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\fecha.c
 
-1634950903 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.c
+1635103199 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<string.h>
 	"avion.h"
 
-1634949262 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.h
+1635103199 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.h
 	"aerolinea.h"
 	"tipo.h"
 	"destino.h"
 
-1634945784 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\tipo.c
+1635020371 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\tipo.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"tipo.h"
 
-1634950742 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.c
+1635103705 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.c
 	<stdio.h>
 	<stdlib.h>
 	"vuelo.h"
 
-1634949387 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\main.c
+1635103432 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -47,7 +47,7 @@
 	"dataWarehouse.h"
 	"destino.h"
 
-1634950903 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.h
+1635103510 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.h
 	"fecha.h"
 	"avion.h"
 	"destino.h"
@@ -65,5 +65,5 @@
 	"avion.h"
 	"localidad.h"
 
-1634950675 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.h
+1635023955 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.h
 

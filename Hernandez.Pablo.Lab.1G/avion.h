@@ -22,3 +22,6 @@ int bajaAvion(eAvion aviones[], int tam, eAerolinea aerolineas[], int tamA, eTip
 int menuModificarAvion(eAvion aviones[], int tam, int indice, eAerolinea aerolineas[], int tamA, eTipo tipos[], int tamT);
 int modificarAvion(eAvion aviones[], int tam, eAerolinea aerolineas[], int tamA, eTipo tipos[], int tamT);
 int ordenarAviones(eAvion aviones[], int tam);
+int validarIdAvion( int id, eAvion aviones[], int tam);
+int buscarAvion(int idAvion, eAvion aviones[], int tam, int* idAerolinea, int* idTipo);
+

@@ -12,7 +12,7 @@ int mostrarDetinos( eDestino destinos[], int tam )
         printf("  Id         Descripcion       Precio\n");
         for (int i = 0; i < tam; i++)
         {
-            printf("  %d       %-10s        %d\n", destinos[i].id, destinos[i].descripcion, destinos[i].precio);
+            printf("  %d       %-10s        $%d\n", destinos[i].id, destinos[i].descripcion, destinos[i].precio);
         }
         //printf("\n");
         todoOk = 1;
@@ -34,4 +34,27 @@ int validarIdDestino( int id, eDestino destinos[], int tam )
     }
     return esValido;
 }
-
+int cargarDescripcionDestino( eDestino destinos[], int tamD, int idDestino, char descripcion[], int* precio )
+{
+    int todoOk = 0;
+    int flag = 1;
+    if (destinos != NULL && tamD > 0 && descripcion != NULL)
+    {
+        todoOk = 1;
+        for (int i = 0; i < tamD   ; i++)
+        {
+            if (destinos[i].id == idDestino)
+            {
+                strcpy(descripcion, destinos[i].descripcion);
+                *precio = destinos[i].precio;
+                flag = 0;
+                break;
+            }
+        }
+        if (flag)
+        {
+            todoOk = -1; // no habia localidad con el id que le pasaron
+        }
+    }
+    return todoOk;
+}
