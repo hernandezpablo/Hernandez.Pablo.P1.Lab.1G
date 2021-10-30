@@ -456,31 +456,7 @@ int buscarAvion(int idAvion, eAvion aviones[], int tam, int* idAerolinea, int* i
 
 return todoOk;
 }
-/*int cargarTipoAvion( eAvion avion[], int tam, eTipo tipos[], int tamT, int idAvion, char tipo[])
-{
-    int todoOk = 0;
-    int flag = 1;
-    char descripcion[20];
-    if (avion != NULL && tam > 0 && tipos != NULL && tamT > 0 && tipo != NULL)
-    {
-        todoOk = 1;
-        for (int i = 0; i < tam; i++)
-        {
-            if (avion[i].id == idAvion)
-            {
-                cargarDescripcionTipo(tipos, tamT, avion[i].idTipo, descripcion);
-                strcpy(tipo,descripcion);
-                flag =0;
-                break;
-            }
-        }
-        if (flag)
-        {
-            todoOk = -1; // no habia localidad con el id que le pasaron
-        }
-    }
-    return todoOk;
-}*/
+
 
 
 int informarAvionAerolinea( eAvion aviones[], int tam, eAerolinea aerolineas[], int tamA, eTipo tipos[], int tamT, ePiloto pilotos[],int tamP )
