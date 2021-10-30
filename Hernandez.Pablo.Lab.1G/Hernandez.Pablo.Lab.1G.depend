@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1634948403 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\aerolinea.c
+1635544027 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\aerolinea.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"aerolinea.h"
 
-1635103625 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.c
+1635524139 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -13,17 +13,18 @@
 
 1634939758 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\fecha.c
 
-1635103199 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.c
+1635554509 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<string.h>
 	"avion.h"
 
-1635103199 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.h
+1635554474 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\avion.h
 	"aerolinea.h"
 	"tipo.h"
 	"destino.h"
+	"piloto.h"
 
 1635020371 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\tipo.c
 	<stdio.h>
@@ -31,12 +32,14 @@
 	<string.h>
 	"tipo.h"
 
-1635103705 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.c
+1635547299 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.c
 	<stdio.h>
 	<stdlib.h>
+	<ctype.h>
+	<string.h>
 	"vuelo.h"
 
-1635103432 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\main.c
+1635554604 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -46,24 +49,34 @@
 	"aerolinea.h"
 	"dataWarehouse.h"
 	"destino.h"
+	"piloto.h"
 
-1635103510 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.h
+1635554684 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\vuelo.h
 	"fecha.h"
 	"avion.h"
 	"destino.h"
+	"piloto.h"
 
 1634940066 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\fecha.h
 
-1634945783 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\tipo.h
+1635523163 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\tipo.h
 
-1634945482 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\aerolinea.h
+1635533078 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\aerolinea.h
 
-1634942425 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\datawarehouse.h
-
-1634942441 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\datawarehouse.c
-	"dataWarehouse.h"
+1635547580 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\datawarehouse.h
 	"avion.h"
-	"localidad.h"
 
-1635023955 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.h
+1635547598 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\datawarehouse.c
+	<string.h>
+	"dataWarehouse.h"
+
+1635533081 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\destino.h
+
+1635547345 c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\piloto.h
+
+1635547266 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\hernandez.pablo.p1.lab.1g\hernandez.pablo.lab.1g\piloto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"piloto.h"
 

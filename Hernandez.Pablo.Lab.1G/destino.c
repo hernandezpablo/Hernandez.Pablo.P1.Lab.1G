@@ -3,7 +3,7 @@
 #include <string.h>
 #include "destino.h"
 
-int mostrarDetinos( eDestino destinos[], int tam )
+int mostrarDestinos( eDestino destinos[], int tam )
 {
     int todoOk = 0;
     if (destinos != NULL && tam > 0 )
@@ -17,8 +17,9 @@ int mostrarDetinos( eDestino destinos[], int tam )
         //printf("\n");
         todoOk = 1;
     }
+    return todoOk;
 }
-int validarIdDestino( int id, eDestino destinos[], int tam )
+int validarIdDestino(int id, eDestino destinos[], int tam)
 {
     int esValido = 0;
     if (destinos != NULL && tam > 0)
@@ -34,7 +35,7 @@ int validarIdDestino( int id, eDestino destinos[], int tam )
     }
     return esValido;
 }
-int cargarDescripcionDestino( eDestino destinos[], int tamD, int idDestino, char descripcion[], int* precio )
+int cargarDescripcionDestinoPrecio( eDestino destinos[], int tamD, int idDestino, char descripcion[], int* precio )
 {
     int todoOk = 0;
     int flag = 1;

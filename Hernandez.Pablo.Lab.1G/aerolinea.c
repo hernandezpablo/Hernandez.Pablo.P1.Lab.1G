@@ -44,6 +44,7 @@ int mostrarAerolineas( eAerolinea aerolineas[], int tam )
 
     return todoOk;
 }
+
 int validarIdAerolinea( int id, eAerolinea aerolineas[], int tam )
 {
     int esValido = 0;

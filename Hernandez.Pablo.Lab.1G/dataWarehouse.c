@@ -1,47 +1,33 @@
-/*#include <string.h>
+#include <string.h>
 #include "dataWarehouse.h"
-#include "avion.h"
-#include "localidad.h"
-char nombres[10][20] =
-{
-    "Juan",
-    "Pedro",
-    "Sofia",
-    "Miguel",
-    "Valentina",
-    "Camila",
-    "Andrea",
-    "Luis",
-    "Diego",
-    "Analia"
-};
 
 
+int idTipos [10] = {20000,20001,20000,20001,20001,20000,20002,20001,20002,20003};
 
+int idAerolineas [10] = {1004,1002,1002,1004,1001,1003,1001,1000,1000,1003};
 
-float alturas[10] = {1.65,1.74,1.68,1.80,1.64,1.69,1.75,1.74,1.73,1.82};
+int capacidades [10] = {100,15,88,150,145,180,90,132,176,65};
 
-int idAerolinea[10] = {1004,1002,003,1004,1003,001,1001,1000,1000,1003};
+int idPiloto [10] = {7004,7002,7002,7004,7001,7003,7001,7000,7000,7003};
 
-int hardcodearPersonas(ePersona lista[], int tam, int cant, int* pId)
+int hardcodearAviones(eAvion aviones[], int tam, int cant, int* pId)
 {
     int contador = -1;
-    if (lista != NULL && tam > 0 && cant >= 0 && cant <= tam && pId != NULL)
+    if (aviones != NULL && tam > 0 && cant >= 0 && cant <= tam && pId != NULL)
     {
         contador = 0;
         for (int i = 0; i < cant;  i++)
         {
-            lista[i].id = *pId;
+            aviones[i].id = *pId;
             (*pId)++;
-            strcpy(lista[i].nombre, nombres[i]);
-            lista[i].sexo = sexos[i];
-            lista[i].edad = edades[i];
-            lista[i].altura = alturas[i];
-            lista[i].idLocalidad = idLocalidades[i];
-            lista[i].isEmpty = 0;
+            aviones[i].idAerolinea = idAerolineas[i];
+            aviones[i].idTipo = idTipos[i];
+            aviones[i].capacidad = capacidades[i];
+            aviones[i].idPiloto = idPiloto[i];
+            aviones[i].isEmpty = 0;
             contador++;
         }
     }
     return contador;
 }
-*/
+
